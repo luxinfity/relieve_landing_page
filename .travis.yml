@@ -1,5 +1,3 @@
-git:
-  quiet: true
 branches:
   only:
   - master
