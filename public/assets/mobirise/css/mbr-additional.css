@@ -1768,8 +1768,6 @@ body {
   color: #767676 !important;
 }
 .cid-rcCflQLO3h {
-  padding-top: 120px;
-  padding-bottom: 75px;
   background-color: #ffffff;
 }
 .cid-rcCflQLO3h .media-container-row {
@@ -2045,13 +2043,13 @@ body {
   z-index: auto;
 }
 .cid-rcChtAezif H2 {
-  text-align: center;
+  text-align: left;
 }
 .cid-rcChtAezif DIV {
-  text-align: right;
+  text-align: left;
 }
 .cid-rcChtAezif P {
-  text-align: center;
+  text-align: left;
 }
 .cid-rcCp5IUst6 {
   padding-top: 90px;
@@ -2228,13 +2226,14 @@ body {
 }
 .cid-rcCgWwwFnJ .mbr-text {
   color: #767676;
+  text-align: center;
 }
 .cid-rcCgWwwFnJ .mbr-author-desc {
   display: block;
   color: #767676;
 }
 .cid-rcCgWwwFnJ .mbr-author-name {
-  color: #767676;
+  color: #1b76bc;
 }
 .cid-rcCgWwwFnJ .mbr-testimonial .panel-item {
   background-color: #ffffff;
