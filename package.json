@@ -7,9 +7,10 @@
   "author": "@alifgiant",
   "private": true,
   "scripts": {
-    "build": "node app.js > ./public/index.html"
+    "build": "pug views -o ./public -P -O ./config.json"
   },
-  "dependencies": {
-    "pug": "^2.0.3"
+  "dependencies": {},
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
