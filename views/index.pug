@@ -8,9 +8,7 @@ html
     meta(name="description", content=description)
     link(rel="shortcut icon", href="./assets/images/relieve-icon.svg", type="image/x-icon")
     link(rel="stylesheet", href="./assets/css/uikit.min.css")
-    link(rel="stylesheet", href="./assets/css/relieveid.css")
-    script(src="./assets/js/uikit.min.js")
-    script(src="./assets/js/uikit-icons.min.js")
+    link(rel="stylesheet", href="./assets/css/relieveid.css")    
   body
     //- NAV REGION
     .uk-margin-medium-left.uk-margin-medium-right
@@ -25,7 +23,7 @@ html
               a.uk-text-capitalize(href='#about')= about
     //- NAV REGION
     //- HERO
-    .uk-cover-container
+    #hero
       .uk-grid(uk-height-viewport)
         .uk-width-1-1.uk-inline
           .uk-position-center-left
@@ -33,26 +31,26 @@ html
           .uk-position-top-right
             img(uk-img="data-src:./assets/images/right-overflow.svg", uk-svg, style="height: 32em;")
           .uk-position-bottom-center
-            img(uk-img="data-src:./assets/images/bottom-overflow.svg", uk-svg, style="height: 28em;")      
-      .uk-container(uk-cover, uk-height-viewport)
+            img(uk-img="data-src:./assets/images/bottom-overflow.svg", uk-svg, style="height: 28em;")
+      .uk-container.uk-position-cover
         .uk-padding
         .uk-text-center.uk-text-large.uk-text-secondary.uk-overflow-auto
           p Cinta dan keselamatan keluarga dalam satu aplikasi
         .uk-text-center.uk-text-emphasis.uk-text-small.uk-overflow-auto.uk-padding-small
-          p “I am aware, we are aware”   
+          p “I am aware, we are aware”
         .uk-flex-center.uk-padding(uk-grid)
           a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
-            img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")                    
+            img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")
           a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
-            img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")       
-        .uk-text-center.uk-padding-small
+            img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")
+        .uk-text-center.uk-padding-small      
           img(uk-img, data-src="./assets/images/phone-main-page.png", alt="main screen preview")
     //- HERO
     //- INFO
     .uk-section.blue-bg
-        .uk-text-center.uk-grid-collapse(class="uk-child-width-expand@s", uk-grid)
-          div Item 1
-          div Item 2
+      .uk-text-center.uk-grid-collapse(class="uk-child-width-expand@s", uk-grid)
+        div Item 1
+        div Item 2
     //- INFO
     //- Footer
     .uk-section.uk-section-secondary.uk-light
@@ -67,3 +65,6 @@ html
             p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
     //- Footer
   footer
+    script(src="./assets/js/uikit.min.js")
+    script(src="./assets/js/uikit-icons.min.js")
+    script(src="./assets/js/relieveid.js")
