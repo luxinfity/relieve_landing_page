@@ -11,24 +11,54 @@ html
     link(rel="stylesheet", href="./assets/css/relieveid.css")
     script(src="./assets/js/uikit.min.js")
     script(src="./assets/js/uikit-icons.min.js")
-  body    
+  body
     //- NAV REGION
-    nav.uk-navbar-container.uk-navbar-transparent(uk-navbar)
-      .uk-navbar-left
-        a.uk-navbar-item.uk-logo(href="#")
-          img(src="./assets/images/relieve-icon.svg", alt=title, style="height: 3.8rem;")
-          span.title.uk-text-middle= title
-      .uk-navbar-right
-        ul.uk-navbar-nav
-          li
-            a.uk-text-capitalize(href='#about') Tentang
+    .uk-margin-medium-left.uk-margin-medium-right
+      nav.uk-navbar-container.uk-navbar-transparent(uk-navbar)
+        .uk-navbar-left
+          a.uk-navbar-item.uk-logo(href="#")
+            img.uk-preserve(uk-img="data-src:./assets/images/relieve-icon.svg", uk-svg, alt=title, style="height: 3.8rem;")
+            span.title.uk-text-middle= title
+        .uk-navbar-right
+          ul.uk-navbar-nav
+            li
+              a.uk-text-capitalize(href='#about') Tentang
     //- NAV REGION
+
     //- HERO
-    .uk-section
-      .uk-container
+    .uk-cover-container
+      .uk-grid(uk-height-viewport)
+        .uk-width-1-1.uk-inline
+          .uk-position-center-left
+            img(uk-img="data-src:./assets/images/left-overflow.svg", uk-svg, style="height: 32em;")
+          .uk-position-top-right
+            img(uk-img="data-src:./assets/images/right-overflow.svg", uk-svg, style="height: 32em;")
+          .uk-position-bottom-center
+            img(uk-img="data-src:./assets/images/bottom-overflow.svg", uk-svg, style="height: 32em;")
+      //- .uk-container(uk-cover) 
+      .uk-container(uk-cover, uk-height-viewport)
+        .uk-padding
         .uk-text-center.uk-text-large.uk-text-secondary
           | Cinta dan keselamatan keluarga dalam satu aplikasi
-        .uk-text-center.uk-text-emphasis.uk-text-small
-          | “I am aware, we are aware”
+        .uk-text-center.uk-text-emphasis.uk-text-small.uk-padding-small
+          | “I am aware, we are aware”        
+        .uk-text-center.uk-padding
+          a(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+            img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")
+          a.uk-padding-small(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+            img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")
+        
+        .uk-text-center.uk-padding-small
+          img(uk-img, data-src="./assets/images/phone-main-page.png", alt="main screen preview")
     //- HERO
+    .uk-section.uk-section-secondary.uk-light
+      .uk-container
+        h3 Section Secondary
+        .uk-grid-match(class='uk-child-width-1-3@m', uk-grid='')
+          div
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+          div
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+          div
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
   footer
