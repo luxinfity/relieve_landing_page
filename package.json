@@ -1,3 +1,15 @@
 {
-  "dependencies": {}
+  "name": "relieve_landing_page",
+  "version": "1.0.0",
+  "description": "Relieve Landing Page - Renew by Adi",
+  "main": "index.js",
+  "repository": "https://github.com/RelieveID/relieve_landing_page.git",
+  "author": "@alifgiant",
+  "private": true,
+  "scripts": {
+    "build": "node app.js > ./public/index.html"
+  },
+  "dependencies": {
+    "pug": "^2.0.3"
+  }
 }
