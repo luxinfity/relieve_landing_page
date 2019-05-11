@@ -22,9 +22,8 @@ html
         .uk-navbar-right
           ul.uk-navbar-nav
             li
-              a.uk-text-capitalize(href='#about') Tentang
+              a.uk-text-capitalize(href='#about')= about
     //- NAV REGION
-
     //- HERO
     .uk-cover-container
       .uk-grid(uk-height-viewport)
@@ -34,23 +33,29 @@ html
           .uk-position-top-right
             img(uk-img="data-src:./assets/images/right-overflow.svg", uk-svg, style="height: 32em;")
           .uk-position-bottom-center
-            img(uk-img="data-src:./assets/images/bottom-overflow.svg", uk-svg, style="height: 32em;")
-      //- .uk-container(uk-cover) 
+            img(uk-img="data-src:./assets/images/bottom-overflow.svg", uk-svg, style="height: 28em;")      
       .uk-container(uk-cover, uk-height-viewport)
         .uk-padding
-        .uk-text-center.uk-text-large.uk-text-secondary
-          | Cinta dan keselamatan keluarga dalam satu aplikasi
-        .uk-text-center.uk-text-emphasis.uk-text-small.uk-padding-small
-          | “I am aware, we are aware”        
-        .uk-text-center.uk-padding
-          a(href="https://play.google.com/store/apps/details?id=com.relieve.android")
-            img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")
-          a.uk-padding-small(href="https://play.google.com/store/apps/details?id=com.relieve.android")
-            img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")
-        
+        .uk-text-center.uk-text-large.uk-text-secondary.uk-overflow-auto
+          p Cinta dan keselamatan keluarga dalam satu aplikasi
+        .uk-text-center.uk-text-emphasis.uk-text-small.uk-overflow-auto.uk-padding-small
+          p “I am aware, we are aware”   
+        .uk-flex-center.uk-padding(uk-grid)
+          a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+            img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")                    
+          a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+            img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")       
         .uk-text-center.uk-padding-small
           img(uk-img, data-src="./assets/images/phone-main-page.png", alt="main screen preview")
     //- HERO
+    //- INFO
+    .uk-section
+      .uk-container.blue-bg
+        .uk-text-center.uk-grid-collapse(class="uk-child-width-expand@s", uk-grid)
+          div Item 1
+          div Item 2
+    //- INFO
+    //- Footer
     .uk-section.uk-section-secondary.uk-light
       .uk-container
         h3 Section Secondary
@@ -61,4 +66,5 @@ html
             p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
           div
             p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+    //- Footer
   footer

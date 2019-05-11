@@ -2,6 +2,10 @@ body {
     font-family: NeoSans;
 }
 
+.blue-bg {
+    background: #3D81E4;
+}
+
 .title {
     font-family: NeoSans;
     font-style: normal;
