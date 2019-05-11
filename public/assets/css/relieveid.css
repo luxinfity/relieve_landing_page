@@ -1,0 +1,12 @@
+body {
+    font-family: NeoSans;
+}
+
+.title {
+    font-family: NeoSans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2878B8;
+}

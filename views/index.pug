@@ -1,10 +1,34 @@
 doctype html
 html
-    head
-        title= title
-        meta(charset='utf-8')
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="description", content=description)
-    link(rel="shortcut icon", href="./images/relieve-icon.svg", type="image/x-icon")
-    body
-    footer
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="description", content=description)
+    link(rel="shortcut icon", href="./assets/images/relieve-icon.svg", type="image/x-icon")
+    link(rel="stylesheet", href="./assets/css/uikit.min.css")
+    link(rel="stylesheet", href="./assets/css/relieveid.css")
+    script(src="./assets/js/uikit.min.js")
+    script(src="./assets/js/uikit-icons.min.js")
+  body    
+    //- NAV REGION
+    nav.uk-navbar-container.uk-navbar-transparent(uk-navbar)
+      .uk-navbar-left
+        a.uk-navbar-item.uk-logo(href="#")
+          img(src="./assets/images/relieve-icon.svg", alt=title, style="height: 3.8rem;")
+          span.title.uk-text-middle= title
+      .uk-navbar-right
+        ul.uk-navbar-nav
+          li
+            a.uk-text-capitalize(href='#about') Tentang
+    //- NAV REGION
+    //- HERO
+    .uk-section
+      .uk-container
+        .uk-text-center.uk-text-large.uk-text-secondary
+          | Cinta dan keselamatan keluarga dalam satu aplikasi
+        .uk-text-center.uk-text-emphasis.uk-text-small
+          | “I am aware, we are aware”
+    //- HERO
+  footer
