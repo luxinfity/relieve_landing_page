@@ -6,6 +6,11 @@ body {
     background: #3D81E4;
 }
 
+.blue-bg.dark {
+    background: #183FD2;
+    color: #ffffff;
+}
+
 .title {
     font-family: NeoSans;
     font-style: normal;
@@ -13,4 +18,16 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #2878B8;
+}
+
+.short-about {
+    font-family: Avenir;
+    font-style: normal;
+    color: #ffffff;
+}
+
+h4.short-about {
+    font-style: normal;
+    font-weight: bold;
+    color: #ffffff;
 }

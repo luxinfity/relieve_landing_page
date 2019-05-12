@@ -10,7 +10,7 @@ html
     link(rel="stylesheet", href="./assets/css/uikit.min.css")
     link(rel="stylesheet", href="./assets/css/relieveid.css")    
   body
-    //- NAV REGION
+    //- NAVBAR
     .uk-margin-medium-left.uk-margin-medium-right
       nav.uk-navbar-container.uk-navbar-transparent(uk-navbar)
         .uk-navbar-left
@@ -21,7 +21,7 @@ html
           ul.uk-navbar-nav
             li
               a.uk-text-capitalize(href='#about')= about
-    //- NAV REGION
+    //- NAVBAR
     //- HERO
     #hero
       .uk-grid(uk-height-viewport)
@@ -29,11 +29,9 @@ html
           .uk-position-center-left
             img(uk-img="data-src:./assets/images/left-overflow.svg", uk-svg, style="height: 32em;")
           .uk-position-top-right
-            img(uk-img="data-src:./assets/images/right-overflow.svg", uk-svg, style="height: 32em;")
-          .uk-position-bottom-center
-            img(uk-img="data-src:./assets/images/bottom-overflow.svg", uk-svg, style="height: 28em;")
+            img(uk-img="data-src:./assets/images/right-overflow.svg", uk-svg, style="height: 32em;")          
       .uk-container.uk-position-cover
-        .uk-padding
+        .uk-padding.uk-margin-medium
         .uk-text-center.uk-text-large.uk-text-secondary.uk-overflow-auto
           p Cinta dan keselamatan keluarga dalam satu aplikasi
         .uk-text-center.uk-text-emphasis.uk-text-small.uk-overflow-auto.uk-padding-small
@@ -43,14 +41,32 @@ html
             img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")
           a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
             img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")
-        .uk-text-center.uk-padding-small      
-          img(uk-img, data-src="./assets/images/phone-main-page.png", alt="main screen preview")
+        .uk-width-1-1.uk-inline
+          div(style="margin-top:28em;")
+          img.uk-width-1-1(uk-img="data-src:./assets/images/bottom-overflow.svg", uk-svg, style="height: 28em;")
+          .uk-overlay.uk-position-bottom-center
+            img(uk-img, data-src="./assets/images/phone-main-page.png", alt="main screen preview")            
+            div(style="margin-top:3.5em;")
     //- HERO
     //- INFO
-    .uk-section.blue-bg
-      .uk-text-center.uk-grid-collapse(class="uk-child-width-expand@s", uk-grid)
-        div Item 1
-        div Item 2
+    .uk-section.blue-bg(style="padding:0;")
+      .uk-grid-collapse(uk-grid)        
+        .uk-padding-large(class="uk-width-1-2@m").short-about
+          .uk-margin-large
+          img(uk-img="data-src:./assets/images/loudspeaker.svg", uk-svg, style="height: 2.4em;")
+          .uk-margin-small
+          article.uk-article
+            h4.short-about #IamAwareWeAreAware
+            p Relieve hadir sebagai mitra pemerintah dalam media penyampaian informasi terhadap penanggulangan bencana.
+            p 
+              | Gabung bersama relieve dengan mengkampanyekan hastag 
+              mark.blue-bg.dark #IamAwareWeAreAware
+              |  diseluruh sosial media kamu, bertujuan untuk mengajak dan menggerakan masyarakat untuk turut berpartisipasi dalam proses antisipasi dan mitigasi bencana.          
+          .uk-margin-large
+          a.uk-button.uk-button-default.short-about.uk-border-pill.uk-text-capitalize(href="#") 
+            | Tentang #{title}
+        div(class="uk-width-1-2@m")
+          img(style="min-width: 100%;", uk-img, data-src="./assets/images/its-disastah.png", alt="earthquakes disaster")
     //- INFO
     //- Footer
     .uk-section.uk-section-secondary.uk-light
