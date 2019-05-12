@@ -33,9 +33,9 @@ html
       .uk-container.uk-position-cover
         .uk-padding.uk-margin-medium
         .uk-text-center.uk-text-large.uk-text-secondary.uk-overflow-auto.sans
-          p Cinta dan keselamatan keluarga dalam satu aplikasi
+          p= title
         .uk-text-center.uk-text-emphasis.uk-text-small.uk-overflow-auto.uk-padding-small.sans
-          p “I am aware, We are aware”
+          p= subtitle
         .uk-flex-center.uk-padding(uk-grid)
           a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
             img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")
@@ -74,38 +74,38 @@ html
       //- fitur ping
       .uk-margin-left.uk-margin-right.uk-grid-match(uk-grid)
         div(class="uk-width-1-2@m")
-          div
-            img(uk-img, data-src="./assets/images/fitur-1.png", alt="Fitur Ping")          
+          div.uk-flex.uk-flex-right
+            img(uk-img, data-src="./assets/images/fitur-1.png", alt="Fitur Ping")
         article.uk-article(class="uk-width-1-2@m")
-          .uk-text-secondary.uk-flex-center.uk-flex-column(uk-grid)
+          .uk-text-secondary.uk-flex-center.uk-flex-column(uk-grid, style="margin-right:10em;")
             h4.uk-text-bold #{fitur1.title}
             p #{fitur1.desc}
       //- disaster alert
       .uk-margin-left.uk-margin-right.uk-grid-match(uk-grid)
         article.uk-article(class="uk-width-1-2@m")
-          .uk-text-secondary.uk-flex-center.uk-flex-column(uk-grid)
+          .uk-text-secondary.uk-flex-center.uk-flex-column(uk-grid, style="margin-left:8em;")
             h4.uk-text-bold #{fitur2.title}
             p #{fitur2.desc}
         div(class="uk-width-1-2@m")
-          div
+          div.uk-flex.uk-flex-left
             img(uk-img, data-src="./assets/images/fitur-2.png", alt="Fitur Peringaran Bencana")
       //- discover disaster
       .uk-margin-left.uk-margin-right.uk-grid-match(uk-grid)
         div(class="uk-width-1-2@m")
-          div
+          div.uk-flex.uk-flex-right
             img(uk-img, data-src="./assets/images/fitur-3.png", alt="Fitur Penelusuran Bencana")
         article.uk-article(class="uk-width-1-2@m")
-          .uk-text-secondary.uk-flex-center.uk-flex-column(uk-grid)
+          .uk-text-secondary.uk-flex-center.uk-flex-column(uk-grid, style="margin-right:10em;")
             h4.uk-text-bold #{fitur3.title}
             p #{fitur3.desc}
       //- emergency call
       .uk-margin-left.uk-margin-right.uk-grid-match(uk-grid)
         article.uk-article(class="uk-width-1-2@m")
-          .uk-text-secondary.uk-flex-center.uk-flex-column(uk-grid)
+          .uk-text-secondary.uk-flex-center.uk-flex-column(uk-grid, style="margin-left:8em;")
             h4.uk-text-bold #{fitur4.title}
             p #{fitur4.desc}
         div(class="uk-width-1-2@m")
-          div
+          div.uk-flex.uk-flex-left
             img(uk-img, data-src="./assets/images/fitur-4.png", alt="Fitur Nomor Telpon Bencana")
     //- FITUR
     //- Footer
