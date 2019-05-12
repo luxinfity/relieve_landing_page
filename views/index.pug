@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title= title
+    title= appName
     meta(charset='utf-8')
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1")
@@ -15,12 +15,12 @@ html
       nav.uk-navbar-container.uk-navbar-transparent(uk-navbar)
         .uk-navbar-left
           a.uk-navbar-item.uk-logo(href="#")
-            img.uk-preserve(uk-img="data-src:./assets/images/relieve-icon.svg", uk-svg, alt=title, style="height: 3.8rem;")
-            span.title.uk-text-middle= title
+            img.uk-preserve(uk-img="data-src:./assets/images/relieve-icon.svg", uk-svg, alt=appName, style="height: 3.8rem;")
+            span.title.uk-text-middle= appName
         .uk-navbar-right
           ul.uk-navbar-nav
             li
-              a.uk-text-capitalize(href='#about')= about
+              a.uk-text-capitalize(href='#about') Fitur
     //- NAVBAR
     //- HERO
     #hero
@@ -32,42 +32,82 @@ html
             img(uk-img="data-src:./assets/images/right-overflow.svg", uk-svg, style="height: 32em;")          
       .uk-container.uk-position-cover
         .uk-padding.uk-margin-medium
-        .uk-text-center.uk-text-large.uk-text-secondary.uk-overflow-auto
+        .uk-text-center.uk-text-large.uk-text-secondary.uk-overflow-auto.sans
           p Cinta dan keselamatan keluarga dalam satu aplikasi
-        .uk-text-center.uk-text-emphasis.uk-text-small.uk-overflow-auto.uk-padding-small
-          p “I am aware, we are aware”
+        .uk-text-center.uk-text-emphasis.uk-text-small.uk-overflow-auto.uk-padding-small.sans
+          p “I am aware, We are aware”
         .uk-flex-center.uk-padding(uk-grid)
           a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
             img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")
           a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
             img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")
         .uk-width-1-1.uk-inline
-          div(style="margin-top:28em;")
+          div(style="margin-top:26em;")
           img.uk-width-1-1(uk-img="data-src:./assets/images/bottom-overflow.svg", uk-svg, style="height: 28em;")
           .uk-overlay.uk-position-bottom-center
             img(uk-img, data-src="./assets/images/phone-main-page.png", alt="main screen preview")            
             div(style="margin-top:3.5em;")
     //- HERO
     //- INFO
-    .uk-section.blue-bg(style="padding:0;")
+    .uk-section.uk-light.blue-bg(style="padding:0;")
       .uk-grid-collapse(uk-grid)        
-        .uk-padding-large(class="uk-width-1-2@m").short-about
+        .uk-padding-large(class="uk-width-1-2@m")
           .uk-margin-large
           img(uk-img="data-src:./assets/images/loudspeaker.svg", uk-svg, style="height: 2.4em;")
           .uk-margin-small
           article.uk-article
-            h4.short-about #IamAwareWeAreAware
-            p Relieve hadir sebagai mitra pemerintah dalam media penyampaian informasi terhadap penanggulangan bencana.
+            h4.uk-text-bold #{about.hashtag}
+            p #{about.paragraph1}
             p 
-              | Gabung bersama relieve dengan mengkampanyekan hastag 
-              mark.blue-bg.dark #IamAwareWeAreAware
-              |  diseluruh sosial media kamu, bertujuan untuk mengajak dan menggerakan masyarakat untuk turut berpartisipasi dalam proses antisipasi dan mitigasi bencana.          
+              | #{about.paragraph2}
+              mark.blue-bg.dark.uk-light #{about.hashtag}
+              | #{about.paragraph3}
           .uk-margin-large
-          a.uk-button.uk-button-default.short-about.uk-border-pill.uk-text-capitalize(href="#") 
-            | Tentang #{title}
+          a.uk-button.uk-button-default.uk-border-pill.uk-text-capitalize(href="#") 
+            != about.action
+            span.uk-margin-left(uk-icon="arrow-right")
         div(class="uk-width-1-2@m")
           img(style="min-width: 100%;", uk-img, data-src="./assets/images/its-disastah.png", alt="earthquakes disaster")
     //- INFO
+    //- FITUR
+    .uk-section
+      //- fitur ping
+      .uk-margin-left.uk-margin-right.uk-grid-match(uk-grid)
+        div(class="uk-width-1-2@m")
+          div
+            img(uk-img, data-src="./assets/images/fitur-1.png", alt="Fitur Ping")          
+        article.uk-article(class="uk-width-1-2@m")
+          .uk-text-secondary.uk-flex-center.uk-flex-column(uk-grid)
+            h4.uk-text-bold #{fitur1.title}
+            p #{fitur1.desc}
+      //- disaster alert
+      .uk-margin-left.uk-margin-right.uk-grid-match(uk-grid)
+        article.uk-article(class="uk-width-1-2@m")
+          .uk-text-secondary.uk-flex-center.uk-flex-column(uk-grid)
+            h4.uk-text-bold #{fitur2.title}
+            p #{fitur2.desc}
+        div(class="uk-width-1-2@m")
+          div
+            img(uk-img, data-src="./assets/images/fitur-2.png", alt="Fitur Peringaran Bencana")
+      //- discover disaster
+      .uk-margin-left.uk-margin-right.uk-grid-match(uk-grid)
+        div(class="uk-width-1-2@m")
+          div
+            img(uk-img, data-src="./assets/images/fitur-3.png", alt="Fitur Penelusuran Bencana")
+        article.uk-article(class="uk-width-1-2@m")
+          .uk-text-secondary.uk-flex-center.uk-flex-column(uk-grid)
+            h4.uk-text-bold #{fitur3.title}
+            p #{fitur3.desc}
+      //- emergency call
+      .uk-margin-left.uk-margin-right.uk-grid-match(uk-grid)
+        article.uk-article(class="uk-width-1-2@m")
+          .uk-text-secondary.uk-flex-center.uk-flex-column(uk-grid)
+            h4.uk-text-bold #{fitur4.title}
+            p #{fitur4.desc}
+        div(class="uk-width-1-2@m")
+          div
+            img(uk-img, data-src="./assets/images/fitur-4.png", alt="Fitur Nomor Telpon Bencana")
+    //- FITUR
     //- Footer
     .uk-section.uk-section-secondary.uk-light
       .uk-container

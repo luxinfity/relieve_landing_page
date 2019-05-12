@@ -1,5 +1,5 @@
 body {
-    font-family: NeoSans;
+    font-family: Avenir;
 }
 
 .blue-bg {
@@ -11,23 +11,13 @@ body {
     color: #ffffff;
 }
 
-.title {
+.sans {
     font-family: NeoSans;
-    font-style: normal;
+}
+
+.sans.title {
     font-weight: 900;
     font-size: 18px;
     line-height: 21px;
     color: #2878B8;
-}
-
-.short-about {
-    font-family: Avenir;
-    font-style: normal;
-    color: #ffffff;
-}
-
-h4.short-about {
-    font-style: normal;
-    font-weight: bold;
-    color: #ffffff;
 }

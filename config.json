@@ -1,5 +1,28 @@
 {
-    "title": "RelieveID",
+    "appName": "RelieveID",
+    "title": "Cinta dan keselamatan keluarga dalam satu aplikasi",
     "description": "Relieve is a family ready disaster app. Relieve is aiming for the sustainable impact of the caring society. At first we relieving family from worry, giving save feeling and peace. At the next level we aiming for social movement, Engaging for the caring culture to the world. Connecting the dots between the society to volunteering helping as a human race. ",
-    "about": " Tentang"
+    "about": {
+        "hashtag": "#IamAwareWeAreAware",
+        "paragraph1": "Relieve hadir sebagai mitra pemerintah dalam media penyampaian informasi terhadap penanggulangan bencana.",
+        "paragraph2": "Gabung bersama relieve dengan mengkampanyekan hastag ",
+        "paragraph3": " diseluruh sosial media kamu, bertujuan untuk mengajak dan menggerakan masyarakat untuk turut berpartisipasi dalam proses antisipasi dan mitigasi bencana.",
+        "action": "Tentang RelieveID"
+    },
+    "fitur1": {
+        "title": "PING!! daftar kerabat",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate. Augue interdum velit euismod in pellentesque."
+    },
+    "fitur2": {
+        "title": "Peringatan dini bencana",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate. Augue interdum velit euismod in pellentesque."
+    },
+    "fitur3": {
+        "title": "Discover - highlight terkini bencana di seluruh Indonesia",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate. Augue interdum velit euismod in pellentesque."
+    },
+    "fitur4": {
+        "title": "Panggilan Darurat",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate. Augue interdum velit euismod in pellentesque."
+    }
 }
