@@ -21,3 +21,7 @@ body {
     line-height: 21px;
     color: #2878B8;
 }
+
+.no-margin-top {
+    margin-top: 0;
+}
