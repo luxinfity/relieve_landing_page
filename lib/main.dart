@@ -1,17 +1,27 @@
 import 'package:flutter_web/material.dart';
+import 'package:relieve_landing_page/layout/relieve_about.dart';
+import 'package:relieve_landing_page/layout/relieve_bottom_bar.dart';
+import 'package:relieve_landing_page/layout/relieve_cta.dart';
+import 'package:relieve_landing_page/layout/relieve_feature.dart';
+import 'package:relieve_landing_page/layout/relieve_hero.dart';
+import 'package:relieve_landing_page/layout/relieve_testimonial.dart';
+import 'package:relieve_landing_page/res/color.dart';
+import 'package:relieve_landing_page/res/fonts.dart';
+
+import 'layout/relieve_app_bar.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Relieve ID - Family App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: AppColor.colorPrimary,
+        fontFamily: Font.openSans.fontFamily,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'RelieveID'),
     );
   }
 }
@@ -24,18 +34,16 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'Hello, World! Alif Akbar 2',
-            ),
-          ],
-        ),
+      body: ListView(
+        children: <Widget>[
+          RelieveAppBar(),
+          RelieveHero(),
+          RelieveAbout(),
+          RelieveFeature(),
+          RelieveTestimonial(),
+          RelieveCTA(),
+          RelieveBottomBar(),
+        ],
       ),
     );
   }
