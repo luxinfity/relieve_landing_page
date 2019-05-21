@@ -27,8 +27,8 @@ class HexColor extends Color {
 class AppColor {
   static final colorDanger = HexColor('F34949');
   static final colorPrimary = HexColor('1B76BC');
-  static final colorPrimaryDark = HexColor('105a93');
-  static final colorAccent = HexColor('5EB6F9');
+  static final colorPrimaryDark = HexColor('3D81E4');
+  static final colorAccent = HexColor('183FD2');
   static final colorTextBlack = HexColor('324B72');
   static final colorTextCharcoal = HexColor('1A1A1A');
   static final colorTextGrey = HexColor('929292');
