@@ -11,6 +11,14 @@ body {
     color: #ffffff;
 }
 
+.base-bg {
+    background: #F3F6FC;
+}
+
+.blue-relieve {
+    color: #2878B8;
+}
+
 .sans {
     font-family: NeoSans;
 }
@@ -20,8 +28,4 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #2878B8;
-}
-
-.no-margin-top {
-    margin-top: 0;
 }

@@ -1,5 +1,6 @@
 {
     "appName": "RelieveID",
+    "address": "Jl. Telekomunikasi Terusan Buah Batu Indonesia 40257, Bandung, Indonesia",
     "title": "Cinta dan keselamatan keluarga dalam satu aplikasi",
     "subtitle": "“I am aware, We are aware”",
     "description": "Relieve is a family ready disaster app. Relieve is aiming for the sustainable impact of the caring society. At first we relieving family from worry, giving save feeling and peace. At the next level we aiming for social movement, Engaging for the caring culture to the world. Connecting the dots between the society to volunteering helping as a human race. ",
@@ -12,18 +13,34 @@
     },
     "fitur1": {
         "title": "PING!! daftar kerabat",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate. Augue interdum velit euismod in pellentesque."
+        "desc": "Ketahui kabar kerabat anda dengan satu kali klik. Pastikan diri anda aman agar tidak ada yang khawatir. Anda bisa menjaga komunikasi dan saling menjaga."
     },
     "fitur2": {
         "title": "Peringatan dini bencana",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate. Augue interdum velit euismod in pellentesque."
+        "desc": "Dapatkan peringatan tercepat untuk bencana di sekitar anda. Siaga cepat untuk waspada menghindari bencana. Kami membantu anda untuk waspada dengan melaporkan saat terjadi bencana secara real-time"
     },
     "fitur3": {
         "title": "Discover - highlight terkini bencana di seluruh Indonesia",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate. Augue interdum velit euismod in pellentesque."
+        "desc": "Berita terkini seputar bencana di Indonesia. Ikuti perkembangannya bencana dan pastikan keluarga anda aman. Semua berita dan informasi terangkum dalam satu layar."
     },
     "fitur4": {
         "title": "Panggilan Darurat",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate. Augue interdum velit euismod in pellentesque."
+        "desc": "Akses singkat menuju solusi darurat. Ketika anda memerlukan bantuan, kami menyediakan beberapa nomor darurat yang dapat anda hubungi berdasarkan lokasi anda. Sekarang anda hanya berjarak satu klik dari bala bantuan."
+    },
+    "cta": "Download RelieveID dan Mulai Jaga Keluarga Anda Bersama - Sama",
+    "cta2": "Ikuti kami untuk informasi terbaru",
+    "testimony": {
+        "title": "Kata mereka tentang RelieveID",
+        "content": [{
+                "name": "Dr Tauhid Nur Azhar",
+                "title": "Penggiat Komunitas Relawan Kedaruratan Indonesia",
+                "desc": "“Relieve adalah harapan untuk kemanusiaan, untuk membantu dan dibantu.  Relieve tak sekedar meringankan, tetapi juga me-relief dan me-relive. Membantu banyak orang untuk mendapat kesempatan selamat dan memiliki peluang mempertahankan kehidupan. Relieve adalah cara untuk bersama mengantisipasi berbagai kondisi yang perlu untuk kita antisipasi.“"
+            },
+            {
+                "name": "Ambang Fajar",
+                "title": "Koordinator Turun Tangan Bandung",
+                "desc": "“Relieve.id hadir untuk mengubah pola pikir kita terhadap bencana yang pada awalnya responsif menjadi preventif. Bukan berarti kita mencegah secara harfiah bagaimana bencana tidak terjadi, tetapi lebih bagaimana kita sadar akan potensi bencana dan meminimalisir resiko dari bencana itu sendiri.“"
+            }
+        ]
     }
 }
