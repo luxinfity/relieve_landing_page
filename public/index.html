@@ -16,17 +16,18 @@
         <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="#"><img class="uk-preserve" uk-img="data-src:./assets/images/relieve-icon.svg" uk-svg alt="RelieveID" style="height: 3.8rem;"><span class="sans title uk-text-middle">RelieveID</span></a></div>
         <div class="uk-navbar-right">
           <ul class="uk-navbar-nav">
-            <li><a class="uk-text-capitalize" href="#about">Fitur</a></li>
+            <li><a class="uk-text-capitalize" href="#about" uk-scroll="">Tentang</a></li>
+            <li><a class="uk-text-capitalize" href="#fitur" uk-scroll="">Fitur</a></li>
+            <li><a class="uk-text-capitalize" href="#testimony" uk-scroll="">Ulasan</a></li>
+            <li><a class="uk-text-capitalize" href="#download" uk-scroll="">Download</a></li>
           </ul>
         </div>
       </nav>
     </div>
     <div id="hero">
       <div class="uk-grid" uk-height-viewport>
-        <div class="uk-width-1-1 uk-inline">
-          <div class="uk-position-center-left">           <img uk-img="data-src:./assets/images/left-overflow.svg" uk-svg style="height: 32em; width:32em;"></div>
-          <div class="uk-position-top-right"><img uk-img="data-src:./assets/images/right-overflow.svg" uk-svg style="height: 32em"></div>
-        </div>
+        <div class="uk-position-center-left">           <img uk-img="data-src:./assets/images/left-overflow.svg" uk-svg style="height: 32em;"></div>
+        <div class="uk-position-top-right"><img uk-img="data-src:./assets/images/right-overflow.svg" uk-svg style="height: 32em"></div>
       </div>
       <div class="uk-container uk-position-cover">
         <div class="uk-padding uk-margin-medium"></div>
@@ -62,7 +63,7 @@
         <div><img style="min-width: 100%;" uk-img data-src="./assets/images/its-disastah.png" alt="earthquakes disaster"></div>
       </div>
     </div>
-    <div class="uk-section">
+    <div class="uk-section" id="fitur">
       <div class="uk-container">
         <div class="uk-grid-match uk-grid uk-child-width-1-2@m">
           <article class="uk-article">
@@ -116,12 +117,12 @@
         </div>
       </div>
     </div>
-    <div class="uk-section">
+    <div class="uk-section" id="testimony">
       <div class="uk-container">
         <div class="uk-grid-match uk-grid uk-child-width-1-2@m">
           <div class="uk-flex uk-flex-center">
             <div class="uk-width-2-3">
-              <div class="uk-position-relative" uk-slider="" tabindex="0">
+              <div class="uk-position-relative" id="slider1" uk-slider="">
                 <ul class="uk-slider-items uk-grid">
                   <li class="uk-width-3-4"><img class="uk-border-rounded" uk-img data-src="./assets/images/speaker-1.png" alt="Dr. Tauhid"></li>
                   <li class="uk-width-3-4"><img class="uk-border-rounded" uk-img data-src="./assets/images/speaker-2.png" alt="Ambang Fajar"></li>
@@ -130,21 +131,38 @@
               </div>
             </div>
           </div>
-          <div>     
+          <div>
             <article class="uk-article">
               <div class="uk-flex uk-flex-center uk-flex-column"><span><img uk-img="data-src:./assets/images/testimonies.svg" uk-svg style="height: 2.5em">
                   <div class="uk-margin-small"></div>
                   <h4 class="uk-text-bold uk-margin-remove-top">Kata mereka tentang RelieveID</h4></span>
-                <p>“Relieve adalah harapan untuk kemanusiaan, untuk membantu dan dibantu.  Relieve tak sekedar meringankan, tetapi juga me-relief dan me-relive. Membantu banyak orang untuk mendapat kesempatan selamat dan memiliki peluang mempertahankan kehidupan. Relieve adalah cara untuk bersama mengantisipasi berbagai kondisi yang perlu untuk kita antisipasi.“</p><span>
-                  <div class="uk-text-bold">Dr Tauhid Nur Azhar</div>
-                  <div>Penggiat Komunitas Relawan Kedaruratan Indonesia</div></span>
+                <div class="uk-position-relative" id="slider2" uk-slider="">
+                  <ul class="uk-slider-items uk-grid">
+                    <li class="uk-width-4-4">
+                      <p>“Relieve.Id adalah harapan untuk kemanusiaan, untuk membantu dan dibantu.  Relieve tak sekedar meringankan, tetapi juga me-relief dan me-relive. Membantu banyak orang untuk mendapat kesempatan selamat dan memiliki peluang mempertahankan kehidupan. Relieve adalah cara untuk bersama mengantisipasi berbagai kondisi yang perlu untuk kita antisipasi.“</p>
+                      <div class="uk-text-bold uk-text-break">Dr Tauhid Nur Azhar</div>
+                      <div class="uk-text-break">Penggiat Komunitas Relawan Kedaruratan Indonesia</div>
+                    </li>
+                    <li class="uk-width-4-4">
+                      <p>“Relieve.id hadir untuk mengubah pola pikir kita terhadap bencana yang pada awalnya responsif menjadi preventif. Bukan berarti kita mencegah secara harfiah bagaimana bencana tidak terjadi, tetapi lebih bagaimana kita sadar akan potensi bencana dan meminimalisir resiko dari bencana itu sendiri.“</p>
+                      <div class="uk-text-bold uk-text-break">Ambang Fajar</div>
+                      <div class="uk-text-break">Koordinator Turun Tangan Bandung</div>
+                    </li>
+                    <li class="uk-width-4-4">
+                      <p>“Relive.Id merupakan invosi yang sangat berguna, apalagi di Indonesia yang memang setiap tahunnya pasti ada bencana alam. Dengan adanya Relieve penyaluran informasi bencana dapat berlangsung lebih efektif“</p>
+                      <div class="uk-text-bold uk-text-break">Aidil Afdan Pananrang</div>
+                      <div class="uk-text-break">Aktivis Mahasiswa</div>
+                    </li>
+                  </ul>
+                  <ul class="uk-slider-nav uk-dotnav uk-margin-top"></ul>
+                </div>
               </div>
             </article>
           </div>
         </div>
       </div>
     </div>
-    <div class="uk-section base-bg">
+    <div class="uk-section base-bg" id="download">
       <div class="uk-text-center uk-text-lead uk-text-bold uk-margin-large-left uk-margin-large-right uk-margin-large-bottom">Download RelieveID dan Mulai Jaga Keluarga Anda Bersama - Sama
       </div>
       <div class="uk-grid uk-grid-match uk-flex-center uk-child-width-1-2@m"><a class="uk-width-auto" href="https://play.google.com/store/apps/details?id=com.relieve.android"><img uk-img data-src="./assets/images/appstore.png" alt="download from appstore"></a><a class="uk-width-auto" href="https://play.google.com/store/apps/details?id=com.relieve.android"><img uk-img data-src="./assets/images/playstore.png" alt="download from playstore"></a></div>
@@ -179,7 +197,7 @@
   </body>
   <footer>
     <script src="./assets/js/uikit.min.js"></script>
-    <script src="./assets/js/uikit-icons.min.js"></script>
+    <script src="./assets/js/uikit-icons.min.js">   </script>
     <script src="./assets/js/relieveid.js"></script>
   </footer>
 </html>

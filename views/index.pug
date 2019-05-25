@@ -20,16 +20,21 @@ html
         .uk-navbar-right
           ul.uk-navbar-nav
             li
-              a.uk-text-capitalize(href='#about') Fitur
+              a.uk-text-capitalize(href='#about', uk-scroll='') Tentang
+            li
+              a.uk-text-capitalize(href='#fitur', uk-scroll='') Fitur
+            li
+              a.uk-text-capitalize(href='#testimony', uk-scroll='') Ulasan
+            li
+              a.uk-text-capitalize(href='#download', uk-scroll='') Download
     //- NAVBAR
     //- HERO
     #hero
       .uk-grid(uk-height-viewport)
-        .uk-width-1-1.uk-inline
-          .uk-position-center-left            
-            img(uk-img="data-src:./assets/images/left-overflow.svg", uk-svg, style="height: 32em; width:32em;")
-          .uk-position-top-right
-            img(uk-img="data-src:./assets/images/right-overflow.svg", uk-svg, style="height: 32em")
+        .uk-position-center-left            
+          img(uk-img="data-src:./assets/images/left-overflow.svg", uk-svg, style="height: 32em;")
+        .uk-position-top-right
+          img(uk-img="data-src:./assets/images/right-overflow.svg", uk-svg, style="height: 32em")
       .uk-container.uk-position-cover
         .uk-padding.uk-margin-medium
         .uk-text-center.uk-text-large.uk-text-secondary.uk-overflow-auto.sans
@@ -69,7 +74,7 @@ html
           img(style="min-width: 100%;", uk-img, data-src="./assets/images/its-disastah.png", alt="earthquakes disaster")      
     //- INFO
     //- FITUR
-    .uk-section
+    #fitur.uk-section
       //- fitur ping
       .uk-container
         .uk-grid-match.uk-grid(class='uk-child-width-1-2@m')
@@ -120,12 +125,12 @@ html
               img(uk-img, data-src="./assets/images/fitur-4.png", alt="Fitur Nomor Telpon Bencana")
     //- FITUR
     //- TESTIMONIES
-    .uk-section
+    #testimony.uk-section
       .uk-container
         .uk-grid-match.uk-grid(class='uk-child-width-1-2@m')
           .uk-flex.uk-flex-center
             .uk-width-2-3
-              .uk-position-relative(uk-slider='', tabindex="0")
+              #slider1.uk-position-relative(uk-slider='')
                 ul.uk-slider-items.uk-grid
                   li.uk-width-3-4
                     img.uk-border-rounded(uk-img, data-src="./assets/images/speaker-1.png", alt="Dr. Tauhid")
@@ -133,20 +138,31 @@ html
                     img.uk-border-rounded(uk-img, data-src="./assets/images/speaker-2.png", alt="Ambang Fajar")
                   li.uk-width-3-4
                     img.uk-border-rounded(uk-img, data-src="./assets/images/speaker-3.png", alt="Aidil Afdan")
-          div      
+          div
             article.uk-article
               .uk-flex.uk-flex-center.uk-flex-column
                 span
                   img(uk-img="data-src:./assets/images/testimonies.svg", uk-svg, style="height: 2.5em")
                   .uk-margin-small
                   h4.uk-text-bold.uk-margin-remove-top #{testimony.title}
-                p #{testimony.content[0].desc}
-                span
-                  div.uk-text-bold #{testimony.content[0].name}
-                  div #{testimony.content[0].title}
+                #slider2.uk-position-relative(uk-slider='')
+                  ul.uk-slider-items.uk-grid
+                    li.uk-width-4-4
+                      p #{testimony.content[0].desc}
+                      .uk-text-bold.uk-text-break #{testimony.content[0].name}
+                      div.uk-text-break #{testimony.content[0].title}
+                    li.uk-width-4-4
+                      p #{testimony.content[1].desc}
+                      .uk-text-bold.uk-text-break #{testimony.content[1].name}
+                      div.uk-text-break #{testimony.content[1].title}
+                    li.uk-width-4-4
+                      p #{testimony.content[2].desc}
+                      .uk-text-bold.uk-text-break #{testimony.content[2].name}
+                      div.uk-text-break #{testimony.content[2].title}
+                  ul.uk-slider-nav.uk-dotnav.uk-margin-top
     //- TESTIMONIES
     //- CALL TO ACTION
-    .uk-section.base-bg
+    #download.uk-section.base-bg
       .uk-text-center.uk-text-lead.uk-text-bold.uk-margin-large-left.uk-margin-large-right.uk-margin-large-bottom
         != cta
       .uk-grid.uk-grid-match.uk-flex-center(class='uk-child-width-1-2@m')
@@ -192,5 +208,5 @@ html
       //- FOOTER
   footer
     script(src="./assets/js/uikit.min.js")
-    script(src="./assets/js/uikit-icons.min.js")
+    script(src="./assets/js/uikit-icons.min.js")    
     script(src="./assets/js/relieveid.js")
