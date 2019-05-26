@@ -2,14 +2,14 @@
     "appName": "RelieveID",
     "address": "Jl. Telekomunikasi Terusan Buah Batu Indonesia 40257, Bandung, Indonesia",
     "title": "Cinta dan keselamatan keluarga dalam satu aplikasi",
-    "subtitle": "“I am aware, We are aware”",
+    "subtitle": "“I am Aware, We are Aware”",
     "description": "Relieve is a family ready disaster app. Relieve is aiming for the sustainable impact of the caring society. At first we relieving family from worry, giving save feeling and peace. At the next level we aiming for social movement, Engaging for the caring culture to the world. Connecting the dots between the society to volunteering helping as a human race. ",
     "about": {
         "hashtag": "#IamAwareWeAreAware",
         "paragraph1": "Relieve hadir sebagai mitra pemerintah dalam media penyampaian informasi terhadap penanggulangan bencana.",
         "paragraph2": "Gabung bersama relieve dengan mengkampanyekan hastag ",
         "paragraph3": " diseluruh sosial media kamu, bertujuan untuk mengajak dan menggerakan masyarakat untuk turut berpartisipasi dalam proses antisipasi dan mitigasi bencana.",
-        "action": "Tentang RelieveID"
+        "action": "Download RelieveID"
     },
     "fitur1": {
         "title": "PING!! daftar kerabat",
@@ -28,7 +28,8 @@
         "desc": "Akses singkat menuju solusi darurat. Ketika anda memerlukan bantuan, kami menyediakan beberapa nomor darurat yang dapat anda hubungi berdasarkan lokasi anda. Sekarang anda hanya berjarak satu klik dari bala bantuan."
     },
     "cta": "Download RelieveID dan Mulai Jaga Keluarga Anda Bersama - Sama",
-    "cta2": "Ikuti kami untuk informasi terbaru",
+    "cta2": "Berlangganan milis untuk informasi terbaru",
+    "cta3": "Ikuti kami di social media",
     "testimony": {
         "title": "Kata mereka tentang RelieveID",
         "content": [{

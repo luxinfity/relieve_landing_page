@@ -15,8 +15,9 @@ html
       nav.uk-navbar-container.uk-navbar-transparent(uk-navbar)
         .uk-navbar-left
           a.uk-navbar-item.uk-logo(href="#")
+            //- div
             img.uk-preserve(uk-img="data-src:./assets/images/relieve-icon.svg", uk-svg, alt=appName, style="height: 3.8rem;")
-            span.sans.title.uk-text-middle= appName
+            span.title.uk-text-middle.blue-relieve= appName            
         .uk-navbar-right
           ul.uk-navbar-nav
             li
@@ -29,32 +30,32 @@ html
               a.uk-text-capitalize(href='#download', uk-scroll='') Download
     //- NAVBAR
     //- HERO
-    #hero
-      .uk-grid(uk-height-viewport)
-        .uk-position-center-left            
-          img(uk-img="data-src:./assets/images/left-overflow.svg", uk-svg, style="height: 32em;")
-        .uk-position-top-right
-          img(uk-img="data-src:./assets/images/right-overflow.svg", uk-svg, style="height: 32em")
-      .uk-container.uk-position-cover
-        .uk-padding.uk-margin-medium
-        .uk-text-center.uk-text-large.uk-text-secondary.uk-overflow-auto.sans
-          p= title
-        .uk-text-center.uk-text-emphasis.uk-text-small.uk-overflow-auto.uk-padding-small.sans
-          p= subtitle
-        .uk-grid.uk-grid-match.uk-flex-center(class='uk-child-width-1-2@m')
-          a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
-            img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")
-          a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
-            img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")
-        .uk-width-1-1.uk-inline
-          div(style="margin-top:26em;")
-          img.uk-width-1-1(uk-img="data-src:./assets/images/bottom-overflow.svg", uk-svg, style="height: 28em;")
-          .uk-overlay.uk-position-bottom-center
-            img(uk-img, data-src="./assets/images/phone-main-page.png", alt="main screen preview")
-            div(style="margin-top:3.5em;")
-    //- HERO
-    //- INFO
-    .uk-section.uk-light.blue-bg(style="padding:0;")      
+    #hero.uk-section.uk-margin-remove-bottom.uk-padding-remove-bottom
+      .uk-grid
+        .uk-width-1-1.uk-inline(uk-height-viewport)
+          .uk-position-center-left.uk-padding-remove
+            img(uk-img="data-src:./assets/images/left-overflow.svg", uk-svg, style="height: 32em; width: 32em;")
+          .uk-position-top-right.uk-padding-remove
+            img(uk-img="data-src:./assets/images/right-overflow.svg", uk-svg, style="height: 32em")
+          .uk-position-top-center
+            .uk-text-center.uk-text-large.uk-text-secondary.uk-padding-medium
+              h2= title
+            .uk-text-center.uk-text-emphasis.uk-text-small.uk-overflow-auto.uk-margin-medium-bottom
+              p= subtitle
+            .uk-grid.uk-grid-match.uk-flex-center(class='uk-child-width-1-2@m')
+              a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+                img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")
+              a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+                img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")            
+            .uk-inline
+              div(style="height: 25em;")
+              .uk-overlay
+                img(uk-img="data-src:./assets/images/bottom-overflow.svg", uk-svg, style="height: 32em")
+              .uk-overlay.uk-position-top-center.uk-margin-medium-top
+                img(uk-img, data-src="./assets/images/phone-main-page.png", alt="main screen preview")            
+      //- HERO
+      //- INFO
+    #about.uk-section.uk-light.blue-bg.uk-padding-remove
       .uk-grid.uk-grid-match(class='uk-child-width-1-2@m')
         div.uk-container
           div(style="margin-top: 140px; margin-bottom: 100px; margin-left: 80px; margin-right: 80px;")
@@ -67,11 +68,11 @@ html
                 | #{about.paragraph2}
                 mark.blue-bg.dark.uk-light #{about.hashtag}
                 | #{about.paragraph3}
-              a.uk-button.uk-button-default.uk-border-pill.uk-text-capitalize(href="#") 
+              a.uk-button.uk-button-default.uk-border-pill.uk-text-capitalize(href='#download', uk-scroll='')
                 != about.action
                 span.uk-margin-left(uk-icon="arrow-right")
         div
-          img(style="min-width: 100%;", uk-img, data-src="./assets/images/its-disastah.png", alt="earthquakes disaster")      
+          img(style="min-width: 100%;", uk-img, data-src="./assets/images/its-disastah.png", alt="earthquakes disaster")
     //- INFO
     //- FITUR
     #fitur.uk-section
@@ -178,18 +179,18 @@ html
       .uk-margin-small-left.uk-margin-small-right
         .uk-margin-large-left.uk-margin-large-right
           .uk-grid.uk-grid-match
-            div.uk-margin-medium-top(class="uk-width-1-4@m")
+            div.uk-margin-medium-top(class="uk-width-1-3@m")
               div
                 img.uk-preserve(uk-img="data-src:./assets/images/relieve-icon.svg", uk-svg, alt=appName, style="height: 2.8rem;")
-                span.sans.blue-relieve(style="font-size: 14px;")= appName
+                span.title.blue-relieve= appName
               h5.uk-text-bold Alamat
               != address
-            div.uk-margin-medium-top.uk-margin-remove-bottom(class="uk-width-1-4@m")
+            div.uk-margin-medium-top.uk-margin-remove-bottom(class="uk-width-1-6@m")
               h5.uk-text-bold Tentang Kami
               a.uk-link-text(href="#") Press Release
               a.uk-link-text(href="#") Daftar Kontributor
               a.uk-link-text(href="#") Panduan Kontribusi
-            div.uk-margin-medium-top.uk-margin-remove-bottom(class="uk-width-1-4@m")
+            div.uk-margin-medium-top.uk-margin-remove-bottom(class="uk-width-1-6@m")
               h5.uk-text-bold Layanan
               a.uk-link-text(href="#") Paket dan Harga
               a.uk-link-text(href="#") Syarat dan Ketentuan
@@ -200,7 +201,7 @@ html
                 input.uk-width-expand(type='text', placeholder='someone-email@gmail.com', style="padding-left: 1em; padding-right: 1em; font-size: 13px;")
                 button.uk-button.uk-button-primary.uk-width-auto Subscribe
               p.uk-flex.uk-flex-right
-                | Ikuti kami di social media
+                != cta3 
                 a(href="#")
                   img.uk-margin-small-left(uk-img="data-src:./assets/images/ic-facebook.svg", uk-svg, style="height: 1.5rem;")
                 a(href="#") 

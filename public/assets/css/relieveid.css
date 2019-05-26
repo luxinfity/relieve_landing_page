@@ -23,9 +23,8 @@ body {
     font-family: NeoSans;
 }
 
-.sans.title {
-    font-weight: 900;
-    font-size: 18px;
+.title {
+    font-weight: 800;
     line-height: 21px;
     color: #2878B8;
 }
