@@ -6,7 +6,7 @@ html
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     meta(name="description", content=description)
-    link(rel="shortcut icon", href="./assets/images/relieve-icon.svg", type="image/x-icon")
+    link(rel="shortcut icon", href="./assets/images/relieve-icon.png", type="image/x-icon")
     link(rel="stylesheet", href="./assets/css/uikit.min.css")
     link(rel="stylesheet", href="./assets/css/relieveid.css")
   body
@@ -16,7 +16,7 @@ html
         .uk-navbar-left
           a.uk-navbar-item.uk-logo(href="#")
             //- div
-            img.uk-preserve(uk-img="data-src:./assets/images/relieve-icon.svg", uk-svg, alt=appName, style="height: 3.8rem;")
+            img.uk-preserve(uk-img="data-src:./assets/images/relieve-icon.png", alt=appName, style="height: 3.8rem;")
             span.title.uk-text-middle.blue-relieve= appName            
         .uk-navbar-right
           ul.uk-navbar-nav
@@ -34,9 +34,9 @@ html
       .uk-grid
         .uk-width-1-1.uk-inline(uk-height-viewport)
           .uk-position-center-left.uk-padding-remove
-            img(uk-img="data-src:./assets/images/left-overflow.svg", uk-svg, style="height: 32em; width: 32em;")
+            img(uk-img="data-src:./assets/images/overflow-left.png" style="height: 32em; width: 25em;")
           .uk-position-top-right.uk-padding-remove
-            img(uk-img="data-src:./assets/images/right-overflow.svg", uk-svg, style="height: 32em")
+            img(uk-img="data-src:./assets/images/overflow-right.png" style="height: 32em;")
           .uk-position-top-center
             .uk-text-center.uk-text-large.uk-text-secondary.uk-padding-medium
               h2= title
@@ -50,7 +50,7 @@ html
             .uk-inline
               div(style="height: 25em;")
               .uk-overlay
-                img(uk-img="data-src:./assets/images/bottom-overflow.svg", uk-svg, style="height: 32em")
+                img(uk-img="data-src:./assets/images/overflow-bottom.png", style="height: 32em")
               .uk-overlay.uk-position-top-center.uk-margin-medium-top
                 img(uk-img, data-src="./assets/images/phone-main-page.png", alt="main screen preview")            
       //- HERO
@@ -59,7 +59,7 @@ html
       .uk-grid.uk-grid-match(class='uk-child-width-1-2@m')
         div.uk-container
           div(style="margin-top: 140px; margin-bottom: 100px; margin-left: 80px; margin-right: 80px;")
-            img(uk-img="data-src:./assets/images/loudspeaker.svg", uk-svg, style="height: 2.4em;")
+            img(uk-img="data-src:./assets/images/feature-loudspeaker.png", style="height: 2.4em;")
             .uk-margin-small
             article.uk-article
               h4.uk-text-bold #{about.hashtag}
@@ -82,7 +82,7 @@ html
           article.uk-article
             .uk-flex.uk-flex-center.uk-flex-column
               span
-                img(uk-img="data-src:./assets/images/ping-web.svg", uk-svg, style="height: 5em; margin-left:-1.2em;")
+                img(uk-img="data-src:./assets/images/feature-ping.png" style="height: 5em; margin-left:-1.2em;")
                 h4.uk-text-bold.uk-margin-remove-top #{fitur1.title}
               p #{fitur1.desc}
           div(class="uk-flex-first@m")
@@ -94,7 +94,7 @@ html
           article.uk-article
             .uk-flex.uk-flex-center.uk-flex-column
               span
-                img(uk-img="data-src:./assets/images/alert-web.svg", uk-svg, style="height: 5em; margin-left:-1.2em;")
+                img(uk-img="data-src:./assets/images/feature-alert.png", style="height: 5em; margin-left:-1.2em;")
                 h4.uk-text-bold.uk-margin-remove-top #{fitur2.title}
               p #{fitur1.desc}
           div
@@ -106,7 +106,7 @@ html
           article.uk-article
             .uk-flex.uk-flex-center.uk-flex-column
               span
-                img(uk-img="data-src:./assets/images/discover-web.svg", uk-svg, style="height: 5em; margin-left:-1.2em;")
+                img(uk-img="data-src:./assets/images/feature-discover.png", style="height: 5em; margin-left:-1.2em;")
                 h4.uk-text-bold.uk-margin-remove-top #{fitur3.title}
               p #{fitur3.desc}
           div(class="uk-flex-first@m")
@@ -118,7 +118,7 @@ html
           article.uk-article
             .uk-flex.uk-flex-center.uk-flex-column
               span
-                img(uk-img="data-src:./assets/images/call-web.svg", uk-svg, style="height: 5em; margin-left:-1.2em;")
+                img(uk-img="data-src:./assets/images/feature-call.png", style="height: 5em; margin-left:-1.2em;")
                 h4.uk-text-bold.uk-margin-remove-top #{fitur4.title}
               p #{fitur4.desc}
           div
@@ -143,7 +143,7 @@ html
             article.uk-article
               .uk-flex.uk-flex-center.uk-flex-column
                 span
-                  img(uk-img="data-src:./assets/images/testimonies.svg", uk-svg, style="height: 2.5em")
+                  img(uk-img="data-src:./assets/images/testimonies.png", style="height: 2.5em")
                   .uk-margin-small
                   h4.uk-text-bold.uk-margin-remove-top #{testimony.title}
                 #slider2.uk-position-relative(uk-slider='')
@@ -172,7 +172,7 @@ html
         a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
           img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")
       .uk-flex.uk-flex-center.uk-margin-large
-        img.uk-preserve(uk-img="data-src:./assets/images/sketch-1.svg", uk-svg)
+        img.uk-preserve(uk-img="data-src:./assets/images/sketch-1.png")
     //- CALL TO ACTION
     //- FOOTER
     .uk-section.uk-margin-remove-top.uk-padding-remove-top
@@ -181,7 +181,7 @@ html
           .uk-grid.uk-grid-match
             div.uk-margin-medium-top(class="uk-width-1-3@m")
               div
-                img.uk-preserve(uk-img="data-src:./assets/images/relieve-icon.svg", uk-svg, alt=appName, style="height: 2.8rem;")
+                img.uk-preserve(uk-img="data-src:./assets/images/relieve-icon.png", alt=appName, style="height: 2.8rem;")
                 span.title.blue-relieve= appName
               h5.uk-text-bold Alamat
               != address
@@ -203,9 +203,9 @@ html
               p.uk-flex.uk-flex-right
                 != cta3 
                 a(href="#")
-                  img.uk-margin-small-left(uk-img="data-src:./assets/images/ic-facebook.svg", uk-svg, style="height: 1.5rem;")
+                  img.uk-margin-small-left(uk-img="data-src:./assets/images/ic-facebook.png", style="height: 1.5rem;")
                 a(href="#") 
-                  img.uk-margin-small-left(uk-img="data-src:./assets/images/ic-instagram.svg", uk-svg, style="height: 1.5rem;")
+                  img.uk-margin-small-left(uk-img="data-src:./assets/images/ic-instagram.png", style="height: 1.5rem;")
       //- FOOTER
   footer
     script(src="./assets/js/uikit.min.js")
