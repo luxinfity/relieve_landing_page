@@ -57,8 +57,8 @@ html
       //- INFO
     #about.uk-section.uk-light.blue-bg.uk-padding-remove
       .uk-grid.uk-grid-match(class='uk-child-width-1-2@m')
-        div.uk-container
-          div(style="margin-top: 140px; margin-bottom: 100px; margin-left: 80px; margin-right: 80px;")
+        .uk-container(style="margin-top: 140px; margin-bottom: 100px;")
+          .uk-padding
             img(uk-img="data-src:./assets/images/feature-loudspeaker.png", style="height: 2.4em;")
             .uk-margin-small
             article.uk-article
@@ -166,10 +166,10 @@ html
     #download.uk-section.base-bg
       .uk-text-center.uk-text-lead.uk-text-bold.uk-margin-large-left.uk-margin-large-right.uk-margin-large-bottom
         != cta
-      .uk-grid.uk-grid-match.uk-flex-center(class='uk-child-width-1-2@m')
-        a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+      .uk-grid.uk-flex.uk-flex-center
+        a.uk-margin-top(href="https://play.google.com/store/apps/details?id=com.relieve.android")
           img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")
-        a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+        a.uk-margin-top(href="https://play.google.com/store/apps/details?id=com.relieve.android")
           img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")
       .uk-flex.uk-flex-center.uk-margin-large
         img.uk-preserve(uk-img="data-src:./assets/images/sketch-1.png")
@@ -198,7 +198,7 @@ html
             div.uk-width-expand.uk-margin-medium-top
               h5.uk-text-bold.uk-margin-remove-bottom= cta2
               .uk-grid.uk-grid-match.uk-margin-remove-left.uk-margin-remove-right
-                input.uk-width-expand(type='text', placeholder='someone-email@gmail.com', style="padding-left: 1em; padding-right: 1em; font-size: 13px;")
+                input.uk-width-expand(type='text', placeholder='your-email@mail.com', style="padding-left: 1em; padding-right: 1em; font-size: 13px;")
                 button.uk-button.uk-button-primary.uk-width-auto Subscribe
               p.uk-flex.uk-flex-right
                 != cta3 
