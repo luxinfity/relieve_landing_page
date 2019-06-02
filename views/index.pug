@@ -17,7 +17,7 @@ html
           a.uk-navbar-item.uk-logo(href="#")
             //- div
             img.uk-preserve(uk-img="data-src:./assets/images/relieve-icon.png", alt=appName, style="height: 3.8rem;")
-            span.title.uk-text-middle.blue-relieve= appName            
+            span.title.uk-text-middle.blue-relieve= appName
         .uk-navbar-right(class="uk-visible@s")
           ul.uk-navbar-nav
             li
@@ -30,31 +30,21 @@ html
               a.uk-text-capitalize(href='#download', uk-scroll='') Download
     //- NAVBAR
     //- HERO
-    #hero.uk-section.uk-margin-remove-bottom.uk-padding-remove-bottom
-      .uk-grid
-        .uk-width-1-1.uk-inline(uk-height-viewport)
-          .uk-position-center-left.uk-padding-remove
-            img(uk-img="data-src:./assets/images/overflow-left.png" style="height: 32em; width: 25em;")
-          .uk-position-top-right.uk-padding-remove
-            img(uk-img="data-src:./assets/images/overflow-right.png" style="height: 32em;")
-          .uk-position-top-center
-            .uk-text-center.uk-text-large.uk-text-secondary.uk-padding-medium
-              h2= title
-            .uk-text-center.uk-text-emphasis.uk-text-small.uk-overflow-auto.uk-margin-medium-bottom
-              p= subtitle
-            .uk-grid.uk-grid-match.uk-flex-center(class='uk-child-width-1-2@m')
-              a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
-                img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")
-              a.uk-width-auto(href="https://play.google.com/store/apps/details?id=com.relieve.android")
-                img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")            
-            .uk-inline
-              div(style="height: 25em;")
-              .uk-overlay
-                img(uk-img="data-src:./assets/images/overflow-bottom.png", style="height: 32em")
-              .uk-overlay.uk-position-top-center.uk-margin-medium-top
-                img(uk-img, data-src="./assets/images/phone-main-page.png", alt="main screen preview")            
-      //- HERO
-      //- INFO
+    #hero.uk-section.uk-padding-remove      
+      .uk-background-cover.uk-padding-large.uk-padding-remove-left.uk-padding-remove-right(style="background-image: url(./assets/images/overflow-bg.png);")
+        .uk-text-center.uk-text-large.uk-text-secondary.uk-padding-medium
+          h2= title
+        .uk-text-center.uk-text-emphasis.uk-text-small.uk-overflow-auto.uk-margin-medium-bottom
+          p= subtitle
+        .uk-grid.uk-flex.uk-flex-center
+          a.uk-margin-top(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+            img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")
+          a.uk-margin-top(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+            img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")
+        .uk-flex.uk-flex-center.uk-margin-medium-top
+          img(uk-img, data-src="./assets/images/phone-main-page.png", alt="main screen preview")
+    //- HERO
+    //- INFO
     #about.uk-section.uk-light.blue-bg.uk-padding-remove
       .uk-grid.uk-grid-match(class='uk-child-width-1-2@m')
         .uk-container(style="margin-top: 140px; margin-bottom: 100px;")
