@@ -46,8 +46,8 @@ html
     //- HERO
     //- INFO
     #about.uk-section.uk-light.blue-bg.uk-padding-remove
-      .uk-grid.uk-grid-match(class='uk-child-width-1-2@m')
-        .uk-container(style="margin-top: 140px; margin-bottom: 100px;")
+      .uk-grid.uk-grid-collapse(class='uk-child-width-1-2@m', uk-height-match, data-row="false", data-target="> div")
+        .uk-container.uk-margin-top.uk-margin-bottom.uk-flex.uk-flex-middle
           .uk-padding
             img(uk-img="data-src:./assets/images/feature-loudspeaker.png", style="height: 2.4em;")
             .uk-margin-small
@@ -62,7 +62,7 @@ html
                 != about.action
                 span.uk-margin-left(uk-icon="arrow-right")
         div
-          img(style="min-width: 100%;", uk-img, data-src="./assets/images/its-disastah.png", alt="earthquakes disaster")
+          .uk-height-1-1.uk-background-cover.uk-background-top-right(style="background-image: url(./assets/images/its-disastah.png);", alt="earthquakes disaster")
     //- INFO
     //- FITUR
     #fitur.uk-section

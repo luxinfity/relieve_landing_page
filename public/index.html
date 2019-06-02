@@ -14,7 +14,7 @@
     <div class="uk-margin-medium-left uk-margin-medium-right">
       <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
         <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="#"><img class="uk-preserve" uk-img="data-src:./assets/images/relieve-icon.png" alt="RelieveID" style="height: 3.8rem;"><span class="title uk-text-middle blue-relieve">RelieveID</span></a></div>
-        <div class="uk-navbar-right">
+        <div class="uk-navbar-right uk-visible@s">
           <ul class="uk-navbar-nav">
             <li><a class="uk-text-capitalize" href="#about" uk-scroll="">Tentang</a></li>
             <li><a class="uk-text-capitalize" href="#fitur" uk-scroll="">Fitur</a></li>
@@ -24,32 +24,22 @@
         </div>
       </nav>
     </div>
-    <div class="uk-section uk-margin-remove-bottom uk-padding-remove-bottom" id="hero">
-      <div class="uk-grid">
-        <div class="uk-width-1-1 uk-inline" uk-height-viewport>
-          <div class="uk-position-center-left uk-padding-remove"><img uk-img="data-src:./assets/images/overflow-left.png" style="height: 32em; width: 25em;"></div>
-          <div class="uk-position-top-right uk-padding-remove"><img uk-img="data-src:./assets/images/overflow-right.png" style="height: 32em;"></div>
-          <div class="uk-position-top-center">
-            <div class="uk-text-center uk-text-large uk-text-secondary uk-padding-medium">
-              <h2>Cinta dan keselamatan keluarga dalam satu aplikasi</h2>
-            </div>
-            <div class="uk-text-center uk-text-emphasis uk-text-small uk-overflow-auto uk-margin-medium-bottom">
-              <p>“I am Aware, We are Aware”</p>
-            </div>
-            <div class="uk-grid uk-grid-match uk-flex-center uk-child-width-1-2@m"><a class="uk-width-auto" href="https://play.google.com/store/apps/details?id=com.relieve.android"><img uk-img data-src="./assets/images/appstore.png" alt="download from appstore"></a><a class="uk-width-auto" href="https://play.google.com/store/apps/details?id=com.relieve.android"><img uk-img data-src="./assets/images/playstore.png" alt="download from playstore"></a></div>
-            <div class="uk-inline">
-              <div style="height: 25em;"></div>
-              <div class="uk-overlay"><img uk-img="data-src:./assets/images/overflow-bottom.png" style="height: 32em"></div>
-              <div class="uk-overlay uk-position-top-center uk-margin-medium-top"><img uk-img data-src="./assets/images/phone-main-page.png" alt="main screen preview"></div>
-            </div>
-          </div>
+    <div class="uk-section uk-padding-remove" id="hero">     
+      <div class="uk-background-cover uk-padding-large uk-padding-remove-left uk-padding-remove-right" style="background-image: url(./assets/images/overflow-bg.png);">
+        <div class="uk-text-center uk-text-large uk-text-secondary uk-padding-medium">
+          <h2>Cinta dan keselamatan keluarga dalam satu aplikasi</h2>
         </div>
+        <div class="uk-text-center uk-text-emphasis uk-text-small uk-overflow-auto uk-margin-medium-bottom">
+          <p>“I am Aware, We are Aware”</p>
+        </div>
+        <div class="uk-grid uk-flex uk-flex-center"><a class="uk-margin-top" href="https://play.google.com/store/apps/details?id=com.relieve.android"><img uk-img data-src="./assets/images/appstore.png" alt="download from appstore"></a><a class="uk-margin-top" href="https://play.google.com/store/apps/details?id=com.relieve.android"><img uk-img data-src="./assets/images/playstore.png" alt="download from playstore"></a></div>
+        <div class="uk-flex uk-flex-center uk-margin-medium-top"><img uk-img data-src="./assets/images/phone-main-page.png" alt="main screen preview"></div>
       </div>
     </div>
     <div class="uk-section uk-light blue-bg uk-padding-remove" id="about">
-      <div class="uk-grid uk-grid-match uk-child-width-1-2@m">
-        <div class="uk-container">
-          <div style="margin-top: 140px; margin-bottom: 100px; margin-left: 80px; margin-right: 80px;"><img uk-img="data-src:./assets/images/feature-loudspeaker.png" style="height: 2.4em;">
+      <div class="uk-grid uk-grid-collapse uk-child-width-1-2@m" uk-height-match data-row="false" data-target="&gt; div">
+        <div class="uk-container uk-margin-top uk-margin-bottom uk-flex uk-flex-middle">
+          <div class="uk-padding"><img uk-img="data-src:./assets/images/feature-loudspeaker.png" style="height: 2.4em;">
             <div class="uk-margin-small"></div>
             <article class="uk-article">
               <h4 class="uk-text-bold">#IamAwareWeAreAware</h4>
@@ -60,7 +50,9 @@
             </article>
           </div>
         </div>
-        <div><img style="min-width: 100%;" uk-img data-src="./assets/images/its-disastah.png" alt="earthquakes disaster"></div>
+        <div>
+          <div class="uk-height-1-1 uk-background-cover uk-background-top-right" style="background-image: url(./assets/images/its-disastah.png);" alt="earthquakes disaster"></div>
+        </div>
       </div>
     </div>
     <div class="uk-section" id="fitur">
@@ -165,7 +157,7 @@
     <div class="uk-section base-bg" id="download">
       <div class="uk-text-center uk-text-lead uk-text-bold uk-margin-large-left uk-margin-large-right uk-margin-large-bottom">Download RelieveID dan Mulai Jaga Keluarga Anda Bersama - Sama
       </div>
-      <div class="uk-grid uk-grid-match uk-flex-center uk-child-width-1-2@m"><a class="uk-width-auto" href="https://play.google.com/store/apps/details?id=com.relieve.android"><img uk-img data-src="./assets/images/appstore.png" alt="download from appstore"></a><a class="uk-width-auto" href="https://play.google.com/store/apps/details?id=com.relieve.android"><img uk-img data-src="./assets/images/playstore.png" alt="download from playstore"></a></div>
+      <div class="uk-grid uk-flex uk-flex-center"><a class="uk-margin-top" href="https://play.google.com/store/apps/details?id=com.relieve.android"><img uk-img data-src="./assets/images/appstore.png" alt="download from appstore"></a><a class="uk-margin-top" href="https://play.google.com/store/apps/details?id=com.relieve.android"><img uk-img data-src="./assets/images/playstore.png" alt="download from playstore"></a></div>
       <div class="uk-flex uk-flex-center uk-margin-large"><img class="uk-preserve" uk-img="data-src:./assets/images/sketch-1.png"></div>
     </div>
     <div class="uk-section uk-margin-remove-top uk-padding-remove-top">
@@ -185,7 +177,7 @@
             <div class="uk-width-expand uk-margin-medium-top">
               <h5 class="uk-text-bold uk-margin-remove-bottom">Berlangganan milis untuk informasi terbaru</h5>
               <div class="uk-grid uk-grid-match uk-margin-remove-left uk-margin-remove-right">
-                <input class="uk-width-expand" type="text" placeholder="someone-email@gmail.com" style="padding-left: 1em; padding-right: 1em; font-size: 13px;">
+                <input class="uk-width-expand" type="text" placeholder="your-email@mail.com" style="padding-left: 1em; padding-right: 1em; font-size: 13px;">
                 <button class="uk-button uk-button-primary uk-width-auto">Subscribe</button>
               </div>
               <p class="uk-flex uk-flex-right">Ikuti kami di social media<a href="#"><img class="uk-margin-small-left" uk-img="data-src:./assets/images/ic-facebook.png" style="height: 1.5rem;"></a><a href="https://instagram.com/relieveid_apps"> <img class="uk-margin-small-left" uk-img="data-src:./assets/images/ic-instagram.png" style="height: 1.5rem;"></a>
