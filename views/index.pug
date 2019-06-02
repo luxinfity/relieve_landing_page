@@ -15,7 +15,6 @@ html
       nav.uk-navbar-container.uk-navbar-transparent(uk-navbar)
         .uk-navbar-left
           a.uk-navbar-item.uk-logo(href="#")
-            //- div
             img.uk-preserve(uk-img="data-src:./assets/images/relieve-icon.png", alt=appName, style="height: 3.8rem;")
             span.title.uk-text-middle.blue-relieve= appName
         .uk-navbar-right(class="uk-visible@s")
@@ -30,9 +29,9 @@ html
               a.uk-text-capitalize(href='#download', uk-scroll='') Download
     //- NAVBAR
     //- HERO
-    #hero.uk-section.uk-padding-remove      
+    #hero.uk-section.uk-padding-remove
       .uk-background-cover.uk-padding-large.uk-padding-remove-left.uk-padding-remove-right(style="background-image: url(./assets/images/overflow-bg.png);")
-        .uk-text-center.uk-text-large.uk-text-secondary.uk-padding-medium
+        .uk-text-center.uk-text-lead.uk-margin-medium-left.uk-margin-medium-right
           h2= title
         .uk-text-center.uk-text-emphasis.uk-text-small.uk-overflow-auto.uk-margin-medium-bottom
           p= subtitle
