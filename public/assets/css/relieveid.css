@@ -1,0 +1,30 @@
+body {
+    font-family: Avenir;
+}
+
+.blue-bg {
+    background: #3D81E4;
+}
+
+.blue-bg.dark {
+    background: #183FD2;
+    color: #ffffff;
+}
+
+.base-bg {
+    background: #F3F6FC;
+}
+
+.blue-relieve {
+    color: #2878B8;
+}
+
+.sans {
+    font-family: NeoSans;
+}
+
+.title {
+    font-weight: 800;
+    line-height: 21px;
+    color: #2878B8;
+}

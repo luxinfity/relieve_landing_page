@@ -1,0 +1,205 @@
+doctype html
+html
+  head
+    title= appName
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="description", content=description)
+    link(rel="shortcut icon", href="./assets/images/relieve-icon.png", type="image/x-icon")
+    link(rel="stylesheet", href="./assets/css/uikit.min.css")
+    link(rel="stylesheet", href="./assets/css/relieveid.css")
+  body
+    //- NAVBAR
+    .uk-margin-medium-left.uk-margin-medium-right
+      nav.uk-navbar-container.uk-navbar-transparent(uk-navbar)
+        .uk-navbar-left
+          a.uk-navbar-item.uk-logo(href="#")
+            img.uk-preserve(uk-img="data-src:./assets/images/relieve-icon.png", alt=appName, style="height: 3.8rem;")
+            span.title.uk-text-middle.blue-relieve= appName
+        .uk-navbar-right(class="uk-visible@s")
+          ul.uk-navbar-nav
+            li
+              a.uk-text-capitalize(href='#about', uk-scroll='') Tentang
+            li
+              a.uk-text-capitalize(href='#fitur', uk-scroll='') Fitur
+            li
+              a.uk-text-capitalize(href='#testimony', uk-scroll='') Ulasan
+            li
+              a.uk-text-capitalize(href='#download', uk-scroll='') Download
+    //- NAVBAR
+    //- HERO
+    #hero.uk-section.uk-padding-remove
+      .uk-background-cover.uk-padding-large.uk-padding-remove-left.uk-padding-remove-right(style="background-image: url(./assets/images/overflow-bg.png);")
+        .uk-text-center.uk-text-lead.uk-margin-medium-left.uk-margin-medium-right
+          h2= title
+        .uk-text-center.uk-text-emphasis.uk-text-small.uk-overflow-auto.uk-margin-medium-bottom
+          p= subtitle
+        .uk-grid.uk-flex.uk-flex-center
+          a.uk-margin-top(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+            img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")
+          a.uk-margin-top(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+            img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")
+        .uk-flex.uk-flex-center.uk-margin-medium-top
+          img(uk-img, data-src="./assets/images/phone-main-page.png", alt="main screen preview")
+    //- HERO
+    //- INFO
+    #about.uk-section.uk-light.blue-bg.uk-padding-remove
+      .uk-grid.uk-grid-collapse(class='uk-child-width-1-2@m', uk-height-match, data-row="false", data-target="> div")
+        .uk-container.uk-margin-top.uk-margin-bottom.uk-flex.uk-flex-middle
+          .uk-padding
+            img(uk-img="data-src:./assets/images/feature-loudspeaker.png", style="height: 2.4em;")
+            .uk-margin-small
+            article.uk-article
+              h4.uk-text-bold #{about.hashtag}
+              p #{about.paragraph1}
+              p 
+                | #{about.paragraph2}
+                mark.blue-bg.dark.uk-light #{about.hashtag}
+                | #{about.paragraph3}
+              a.uk-button.uk-button-default.uk-border-pill.uk-text-capitalize(href='#download', uk-scroll='')
+                != about.action
+                span.uk-margin-left(uk-icon="arrow-right")
+        div
+          .uk-height-1-1.uk-background-cover.uk-background-top-right(style="background-image: url(./assets/images/its-disastah.png);", alt="earthquakes disaster")
+    //- INFO
+    //- FITUR
+    #fitur.uk-section
+      //- fitur ping
+      .uk-container
+        .uk-grid-match.uk-grid(class='uk-child-width-1-2@m')
+          article.uk-article
+            .uk-flex.uk-flex-center.uk-flex-column
+              span
+                img(uk-img="data-src:./assets/images/feature-ping.png" style="height: 5em; margin-left:-1.2em;")
+                h4.uk-text-bold.uk-margin-remove-top #{fitur1.title}
+              p #{fitur1.desc}
+          div(class="uk-flex-first@m")
+            .uk-flex.uk-flex-center
+              img(uk-img, data-src="./assets/images/fitur-1.png", alt="Fitur Ping")
+      //- disaster alert
+      .uk-container
+        .uk-grid-match.uk-grid(class='uk-child-width-1-2@m')
+          article.uk-article
+            .uk-flex.uk-flex-center.uk-flex-column
+              span
+                img(uk-img="data-src:./assets/images/feature-alert.png", style="height: 5em; margin-left:-1.2em;")
+                h4.uk-text-bold.uk-margin-remove-top #{fitur2.title}
+              p #{fitur1.desc}
+          div
+            .uk-flex.uk-flex-center
+              img(uk-img, data-src="./assets/images/fitur-2.png", alt="Fitur Peringaran Bencana")      
+      //- discover disaster
+      .uk-container
+        .uk-grid-match.uk-grid(class='uk-child-width-1-2@m')
+          article.uk-article
+            .uk-flex.uk-flex-center.uk-flex-column
+              span
+                img(uk-img="data-src:./assets/images/feature-discover.png", style="height: 5em; margin-left:-1.2em;")
+                h4.uk-text-bold.uk-margin-remove-top #{fitur3.title}
+              p #{fitur3.desc}
+          div(class="uk-flex-first@m")
+            .uk-flex.uk-flex-center
+              img(uk-img, data-src="./assets/images/fitur-3.png", alt="Fitur Penelusuran Bencana")
+      //- emergency call
+      .uk-container
+        .uk-grid-match.uk-grid(class='uk-child-width-1-2@m')
+          article.uk-article
+            .uk-flex.uk-flex-center.uk-flex-column
+              span
+                img(uk-img="data-src:./assets/images/feature-call.png", style="height: 5em; margin-left:-1.2em;")
+                h4.uk-text-bold.uk-margin-remove-top #{fitur4.title}
+              p #{fitur4.desc}
+          div
+            .uk-flex.uk-flex-center
+              img(uk-img, data-src="./assets/images/fitur-4.png", alt="Fitur Nomor Telpon Bencana")
+    //- FITUR
+    //- TESTIMONIES
+    #testimony.uk-section
+      .uk-container
+        .uk-grid-match.uk-grid(class='uk-child-width-1-2@m')
+          .uk-flex.uk-flex-center
+            .uk-width-2-3
+              #slider1.uk-position-relative(uk-slider='')
+                ul.uk-slider-items.uk-grid
+                  li.uk-width-3-4
+                    img.uk-border-rounded(uk-img, data-src="./assets/images/speaker-1.png", alt="Dr. Tauhid")
+                  li.uk-width-3-4
+                    img.uk-border-rounded(uk-img, data-src="./assets/images/speaker-2.png", alt="Ambang Fajar")
+                  li.uk-width-3-4
+                    img.uk-border-rounded(uk-img, data-src="./assets/images/speaker-3.png", alt="Aidil Afdan")
+          div
+            article.uk-article
+              .uk-flex.uk-flex-center.uk-flex-column
+                span
+                  img(uk-img="data-src:./assets/images/testimonies.png", style="height: 2.5em")
+                  .uk-margin-small
+                  h4.uk-text-bold.uk-margin-remove-top #{testimony.title}
+                #slider2.uk-position-relative(uk-slider='')
+                  ul.uk-slider-items.uk-grid
+                    li.uk-width-4-4
+                      p #{testimony.content[0].desc}
+                      .uk-text-bold.uk-text-break #{testimony.content[0].name}
+                      div.uk-text-break #{testimony.content[0].title}
+                    li.uk-width-4-4
+                      p #{testimony.content[1].desc}
+                      .uk-text-bold.uk-text-break #{testimony.content[1].name}
+                      div.uk-text-break #{testimony.content[1].title}
+                    li.uk-width-4-4
+                      p #{testimony.content[2].desc}
+                      .uk-text-bold.uk-text-break #{testimony.content[2].name}
+                      div.uk-text-break #{testimony.content[2].title}
+                  ul.uk-slider-nav.uk-dotnav.uk-margin-top
+    //- TESTIMONIES
+    //- CALL TO ACTION
+    #download.uk-section.base-bg
+      .uk-text-center.uk-text-lead.uk-text-bold.uk-margin-large-left.uk-margin-large-right.uk-margin-large-bottom
+        != cta
+      .uk-grid.uk-flex.uk-flex-center
+        a.uk-margin-top(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+          img(uk-img, data-src="./assets/images/appstore.png", alt="download from appstore")
+        a.uk-margin-top(href="https://play.google.com/store/apps/details?id=com.relieve.android")
+          img(uk-img, data-src="./assets/images/playstore.png", alt="download from playstore")
+      .uk-flex.uk-flex-center.uk-margin-large
+        img.uk-preserve(uk-img="data-src:./assets/images/sketch-1.png")
+    //- CALL TO ACTION
+    //- FOOTER
+    .uk-section.uk-margin-remove-top.uk-padding-remove-top
+      .uk-margin-small-left.uk-margin-small-right
+        .uk-margin-large-left.uk-margin-large-right
+          .uk-grid.uk-grid-match
+            div.uk-margin-medium-top(class="uk-width-1-3@m")
+              div
+                img.uk-preserve(uk-img="data-src:./assets/images/relieve-icon.png", alt=appName, style="height: 2.8rem;")
+                span.title.blue-relieve= appName
+              h5.uk-text-bold Alamat
+              != address
+            div.uk-margin-medium-top.uk-margin-remove-bottom(class="uk-width-1-6@m")
+              h5.uk-text-bold Tentang Kami
+              a.uk-link-text(href="http://bit.ly/relieve-press-release") Press Release
+              a.uk-link-text(href="http://bit.ly/relieve-contributors") Daftar Kontributor
+              a.uk-link-text(href="#") Panduan Kontribusi
+            div.uk-margin-medium-top.uk-margin-remove-bottom(class="uk-width-1-6@m")
+              h5.uk-text-bold Layanan
+              a.uk-link-text(href="#") Paket dan Harga
+              a.uk-link-text(href="http://bit.ly/relieve-tnc") Syarat dan Ketentuan
+              a.uk-link-text(href="#") Kebijakan Privasi
+            div.uk-width-expand.uk-margin-medium-top
+              h5.uk-text-bold.uk-margin-remove-bottom= cta2
+              .uk-grid.uk-grid-match.uk-margin-remove-left.uk-margin-remove-right
+                input.uk-width-expand(type='text', placeholder='your-email@mail.com', style="padding-left: 1em; padding-right: 1em; font-size: 13px;")
+                button.uk-button.uk-button-primary.uk-width-auto Subscribe
+              p.uk-flex.uk-flex-right
+                != cta3 
+                a(href="#")
+                  img.uk-margin-small-left(uk-img="data-src:./assets/images/ic-facebook.png", style="height: 1.5rem;")
+                a(href="https://instagram.com/relieveid_apps") 
+                  img.uk-margin-small-left(uk-img="data-src:./assets/images/ic-instagram.png", style="height: 1.5rem;")
+    //- FOOTER
+    //- COPYRIGHT
+    .base-bg.uk-text-small.uk-text-muted.uk-padding-small 
+      .uk-margin-large-left (C) 2019 Copyright all the right reserved
+  footer
+    script(src="./assets/js/uikit.min.js")
+    script(src="./assets/js/uikit-icons.min.js")    
+    script(src="./assets/js/relieveid.js")

@@ -1,3 +1,16 @@
 {
-  "dependencies": {}
+  "name": "relieve_landing_page",
+  "version": "1.0.0",
+  "description": "Relieve Landing Page - Renew by Adi",
+  "main": "index.js",
+  "repository": "https://github.com/RelieveID/relieve_landing_page.git",
+  "author": "@alifgiant",
+  "private": true,
+  "scripts": {
+    "build": "pug views -o ./public -P -O ./config.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  }
 }
